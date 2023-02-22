@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    {{# show_juggling}}
+
+    <div id="wrapper">
+        <div style="display: block;">
+            <h1 id='loader'>
+                Football Juggling
+            </h1>
+            <div id="game-div">
+                <div id="container-text">
+                    <div id="cc-title">{{{gameHeading}}}</div>
+                </div>
+                <div id="scoreBoard"></div>
+                <div id="ball">
+                    <img id="innerBall" src="/game_image1.png" alt="">
+                     <!-- <div id="innerBall"></div> --> <!-- <div hidden="true" id="ball_image">{{{image1}}}</div> -->
+                </div>
+                <div class="cc-txt">{{{result_before_registration_some_correct_text}}}</div>
+                <div><button id="contest-start-game" class="cc-button btn-primary">{{{result_before_coupon_ki_button_text}}}</button></div>
+            </div>
+
+            {{# show_time}}
+            <div class="counter_box" id="juggling_counter"></div>
+            {{/ show_time}}
+            <div class="cc-txt">{{{result_before_registration_almost_all_correct_text}}}</div>
+        </div>
+        {{/ show_juggling}}
+
+
+        <script src="/main.js"></script>
+        <script src="/juggling.js"></script>
+</body>
+
+</html>
